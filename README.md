@@ -13,3 +13,8 @@
 - run `npm run dev` to start the development server
 
 - open `http://localhost:5173` to view the project in the browser
+
+
+## Vanila Javascript Slider
+
+Site link: [https://zendesk-dashboard.netlify.app/](https://zendesk-dashboard.netlify.app/)
