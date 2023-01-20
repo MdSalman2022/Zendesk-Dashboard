@@ -20,13 +20,16 @@ ChartJS.register(
 );
 
 export const options = {
+   responsive: true,
+   maintainAspectRatio: true,
+   aspectRatio: 2,
   indexAxis: 'y' as const,
   elements: {
     bar: {
       borderWidth:0,
     },
   },
-  responsive: true,
+ 
   plugins: {
     legend: {
       position: 'right' as const,
@@ -77,5 +80,9 @@ const data = {
   ],
 };
 export function HorizontalBarChart() {
-  return <Bar options={options} data={data} />;
+   return (
+    <div className="relative max-h-screen-2xl w-screen lg:w-full">
+        <Bar options={options} data={data} />;
+      </div>
+  )
 }

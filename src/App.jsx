@@ -3,7 +3,7 @@ import Header from './components/Header/Header'
 
 function App() {
   return (
-    <div className="">
+    <div className=" bg-neutral">
      <Header/>
      <Dashboard/>
     </div>

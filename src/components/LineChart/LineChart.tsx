@@ -22,7 +22,9 @@ ChartJS.register(
 );
 
 export const options = {
-  responsive: true,
+    responsive: true,
+   maintainAspectRatio: true,
+   aspectRatio: 2,
   plugins: {
     legend: {
       position: 'top' as const,
@@ -73,5 +75,12 @@ const data = {
 };
 
 export function LineChart() {
-  return <Line options={options} data={data} />;
+  
+  return (
+    <div className="relative w-full">
+       <Line options={options} data={data} />;
+      </div>
+  )
+  
+ 
 }
